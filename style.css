@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+/* Section 1 */
+
+.topbar {
+  padding: 5px;
+}
+
+.topbar ul {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f6f6f6;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.topbar .fb {
+  color: #a3b0ce;
+  padding-left: 2px;
+}
+
+.topbar .twitter {
+  color: #42beef;
+  padding-left: 2px;
+}
+
+.topbar a {
+  text-decoration: none;
+}
+
+.topbar a:hover {
+  color: red;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.logo h1 a {
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png
+  );
+  width: 224px;
+  height: 50px;
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu {
+  display: flex;
+  padding: 10px;
+}
+
+.header .menu li a {
+  text-decoration: none;
+  color: #66e0c2;
+  padding: 10px;
+}
+
+.header .menu li a:hover {
+  color: red;
+}
+
+/* Section 2 */
+
+.banner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.banner h2 {
+  font-size: 35px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.15);
+  /*text-align: center;*/
+  padding-top: 150px;
+  padding-left: 20px;
+}
+
+/* Section 3 */
+
+.content {
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.item p {
+  margin: 30px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.content .item h3 {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+.content .item-list {
+  text-align: center;
+  line-height: 20px;
+}
+
+.content .item {
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid #f1f1f1;
+  box-shadow: 0 1px 5px gray;
+}
+
+.content ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content img {
+  width: 300px;
+  height: 170px;
+}
+
+/* Section 4 */
+
+.table {
+  padding: 20px 0px 20px 0px;
+  align-items: center;
+}
+
+.table h2 {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+table 
+td, 
+tr, 
+th {
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  padding: 5px;
+}
+
+table .title {
+  background: #f7f7f7;
+  font-weight: 600;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  margin: 10px;
+}
+
+.price,
+.effort,
+.code,
+.update,
+.review,
+.cc,
+.o {
+  padding: 10px;
+  text-align: left;
+}
+
+.pricelow {
+  color: #66cab1;
+  font-weight: bold;
+}
+
+/* Section 4 */
+
+.content-form {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#00664b,#009972);
+  width: 100%;
+  heigh: 80%;
+}
+
+.content-form h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+  padding: 20px 0px 20px 0px;
+}
+
+.content-form form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form textarea {
+  margin: 30px 0px 20px 20px;
+  width: 80%;
+  height: 50%;
+}
+
+.box input, label {
+  margin: 2px 10px 2px 10px;
+  color: #fff;
+  width: 400px;
+  height: 20px;
+  display: flex;
+}
+
+.box .switch {
+  margin-top: 20px;
+  width: 40px;
+  color: #fff;
+  background-color: #00cc98;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.box .switch:hover {
+  color: red;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #fff;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .footer ul li a {
+    color: #ed81b3; 
+    text-decoration: none;
+  }
